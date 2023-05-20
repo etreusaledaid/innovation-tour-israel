@@ -1,0 +1,250 @@
+@font-face {
+  font-family: 'Fivo Sans';
+  src:url('fonts/FivoSans-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Fivo Sans Bold';
+  src:url('fonts/FivoSans-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+*{
+	margin: 0px;
+}
+body{
+	background-color: white;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+body > div:nth-child(5){
+	margin-top: 100px;
+}
+img{width: 100%;}
+h1{
+	font-family: 'Fivo Sans', sans-serif;
+	font-style: normal;
+	font-size: 4em;
+	color: white;
+	text-align: center;
+}
+h2{
+	font-family: 'Fivo Sans Bold', sans-serif;
+	font-style: bold;
+	font-size: 2.5em;
+	color: #1c3f63;
+	text-align: center;
+	padding-bottom: 50px;
+}
+p{
+	font-family: 'Fivo Sans', sans-serif;
+	font-style: normal;
+	font-size: 1.5em;
+}
+#cabecera{
+	font-family: 'Fivo Sans', sans-serif;
+	font-style: normal;
+	text-align: center;
+	background-image: url("../images/banner.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: white;
+}
+#cabecera>label{
+	font-size: 40px;
+}
+#boton1{
+    margin-top: -180px;
+    margin-bottom: 180px;
+}
+#boton1 > a > input{    
+	border-radius: 8px;
+	padding: 15px 25px 15px 25px;
+	font-size: 32px;
+	background-color: white;
+	color: #424242;
+	border: solid 1px #583a80;
+}
+#boton1 > a > input:hover{
+	border-radius: 8px;
+	padding: 15px 25px 15px 25px;
+	font-size: 32px;
+	background-color: #006b88;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+#boton2 > a > input{    
+	border-radius: 8px;
+	padding: 15px 25px 15px 25px;
+	font-size: 32px;
+	background:url("../images/boton2.png") center;
+	color: white;
+	border: none;
+	margin-top: 50px;
+	cursor: pointer;
+}
+#cabecera>img{
+	width: 100%;
+}
+@media only screen and (max-device-width: 767.98px){
+	#section1{
+		display: inline-block !important;
+	}
+	#section1 > div:nth-child(2){
+		display: none;
+	}	
+	#boton1{
+    	margin-top: -15%;
+    	margin-bottom: 15%;
+	}
+	#section3 > div:nth-child(1){
+		display: none !important;
+	}
+	#section3 > div:nth-child(2){
+		display: grid !important;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+		grid-auto-rows: minmax(100px, auto);
+		text-align: center;
+	}
+	#section3 > div:nth-child(2) > div img{
+		width: 80%;
+		padding: 20px;
+	}
+	#section7 > div:nth-child(1){
+		display: none !important;
+	}
+	#section7 > div:nth-child(2){
+		display: inline-block !important;
+	}
+	#section8 > div:nth-child(2) img{
+		width: 100%;
+	}
+	#section8 > div:nth-child(1){
+		display: none !important;
+	}
+	#section8 > div:nth-child(2){
+		display: inline-block !important;
+		text-align: center;
+	}
+	#section8 > div:nth-child(2) div{
+		padding: 20px;
+	}
+	#section8 > div:nth-child(2) div img{
+		width: 80%;
+	}
+}
+#section1{
+	font-family: 'Fivo Sans', sans-serif;
+	font-style: normal;
+	font-size: 1.2em;
+	text-align: justify;
+	padding: 10px 100px 50px 100px;
+}
+#section1{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+	grid-auto-rows: minmax(100px, auto);
+}
+#section1 > div:nth-child(1){
+	display: grid;
+	grid-template-columns: 1fr;
+}	
+#section2{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+	grid-auto-rows: minmax(100px, auto);
+	font-family: 'Fivo Sans', sans-serif;
+	font-style: normal;
+	font-size: 1em;
+	padding: 50px 100px 50px 100px;
+}
+#section2 > div:nth-child(1){
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+}
+#section2 > div:nth-child(2){
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+}
+#section3 > div:nth-child(1){
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	grid-auto-rows: minmax(100px, auto);
+	font-family: 'Fivo Sans', sans-serif;
+	font-style: normal;
+	padding: 10px 100px 20px 100px;
+	text-align: center;
+}
+#section3 > div:nth-child(1) img{
+	width: 80%;
+	cursor: pointer;
+	transition: width 1s;
+}
+#section3 > div:nth-child(1) img:hover{
+	width: 100%;
+}
+#section3 > div:nth-child(2){
+	display: none;
+}
+#section4{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+	grid-auto-rows: minmax(100px, auto);
+}
+#section4{
+	padding: 10px 100px 50px 100px;
+}
+#section4 > div:nth-child(1){
+	width: 90%;
+}
+#section4 > div:nth-child(2) > img:nth-child(2){
+	width: 90%;
+}
+#section6{
+	font-family: 'Fivo Sans', sans-serif;
+	font-style: normal;
+	text-align: center;
+	padding: 50px 100px 50px 100px;
+}
+#section6 label{
+	font-family: 'Fivo Sans Bold', sans-serif;
+	font-style: bold;
+	font-size: 2.5em;
+}
+#section7 > div:nth-child(1){
+	text-align: center;
+	padding: 50px 100px 50px 100px;
+}
+#section7 > div:nth-child(1) img{
+	width: 100%;
+}
+#section7 > div:nth-child(2){
+	display: none;
+}
+#section8 > div:nth-child(1){
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+	grid-auto-rows: minmax(100px, auto);
+	font-family: 'Fivo Sans', sans-serif;
+	font-style: normal;
+	text-align: center;
+	padding: 50px 100px 50px 100px;
+}
+#section8 > div:nth-child(1) img{
+	width: 80%;
+}
+#section8 > div:nth-child(2){
+	display: none;
+}
